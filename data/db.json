@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "My First Post",
+      "datetime": "September 30,2024 07:59:36 PM",
+      "body": "Making a good progress on creating my first react personalsite"
+    },
+    {
+      "id": "2",
+      "title": "My Second Post",
+      "datetime": "September 30,2024 07:59:36 PM",
+      "body": "Its been 5 months since i started the journey to become react front-end devloper"
+    },
+    {
+      "id": "3",
+      "title": "My Third Post",
+      "datetime": "September 30,2024 07:59:36 PM",
+      "body": "Its been 5 months since i started the journey to become react front-end devloper"
+    },
+    {
+      "id": "4",
+      "title": "My Third Post",
+      "datetime": "December 13, 2024 11:28:30 PM",
+      "body": "Its been 5 months since i started the journey to become react front-end devloper"
+    }
+  ]
+}

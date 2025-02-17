@@ -1,0 +1,1051 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+.logo{
+    font-family: "Catamaran", sans-serif;
+    text-decoration: none;
+    color: #111;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 18px 0;
+}
+
+header nav {
+    display: flex;                 /* Use flexbox for layout */
+    align-items: center;           /* Align items vertically */
+    justify-content: space-between;/* Space out items */
+                  /* Wrap items when the screen is small */
+}
+
+header nav ul {
+    display: flex;                 /* Flexbox for navigation links */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 0 14px;
+}
+
+header nav input {
+    flex: 1;                       /* Let the input field take up available space */
+    max-width: 150px;              /* Limit its size */
+    height: 30px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 2px;
+    
+}
+
+
+
+
+
+header ul li a{
+    color: #111;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+@media only screen and (min-width: 900px) {
+    .logo{
+        text-align:left;
+        line-height: 38px;
+        margin: 31px 0;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left;
+        
+      }
+      header nav ul{
+          float: left;
+          margin: 20px 0 ;
+          
+          
+      }
+      
+      header nav ul li{
+           display: inline-block;
+           list-style: none;
+           padding: 0 17px;
+          
+      }
+      
+      header ul li {
+          text-transform: uppercase;
+          line-height: 60px;
+      }
+
+    
+
+      header nav input {
+                                   
+          max-width: 400px;               
+        } 
+    
+  
+  }
+
+
+
+footer{
+    
+    padding: 25px 25px;
+    width: calc(100% -50px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+footer ul li{
+    list-style-type: none;
+    display: block;
+    
+}
+footer ul li button{
+    color: #111;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px #111;
+    border: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.list-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+    gap: 3px;
+    
+}
+
+
+.NewPost h3{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    
+    
+}
+
+
+
+.postForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    row-gap: 10px;
+    
+}
+
+.postForm label{
+    padding-right: 395px;
+}
+
+
+
+.postForm label{
+    font-family: "Catamaran", sans-serif;
+    font-size: 20px;
+    font-weight: 60px;
+    
+    
+}
+
+.postForm input{
+    height: 265px;
+    width: 450px;
+    border: solid black 2px;
+    border-radius:7px;
+    
+
+}
+.postForm p{
+   color: red;
+   font-weight: 300;
+    
+  
+}
+
+
+
+
+.NewPost button{
+    
+    width: 70px;
+    margin-left: 25px;
+    border-radius: 10px;
+    color: antiquewhite;
+    background-color: #111;
+    
+}
+
+.NewPost {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh-200px);
+    width: 100%;
+    padding-left: 15px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(#04fafd, 50%, #119dff);
+    
+    overflow: hidden;
+  }
+  
+  /* Bubble Wrapper */
+  .wrapper1 {
+    height: 100%;
+    width: 100%;
+    
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* Bubble Div Styling */
+  .wrapper1 div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    animation: animate 8s linear infinite;
+  }
+  
+  /* Dot Styling Inside Bubble */
+  div .dot1 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    
+  }
+  
+  /* Positioning and Animation Timing for Bubbles */
+  .wrapper1 div:nth-child(1) { top: 25%; left: 20%; animation: animate 8s linear infinite; }
+  .wrapper1 div:nth-child(2) { top: 60%; left: 80%; animation: animate 10s linear infinite; }
+  .wrapper1 div:nth-child(3) { top: 40%; left: 40%; animation: animate 3s linear infinite; }
+  .wrapper1 div:nth-child(4) { top: 90%; left: 30%; animation: animate 7s linear infinite; }
+  .wrapper1 div:nth-child(5) { top: 30%; left: 90%; animation: animate 9s linear infinite; }
+  .wrapper1 div:nth-child(6) { top: 85%; left: 60%; animation: animate 9s linear infinite; }
+  .wrapper1 div:nth-child(7) { top: 50%; left: 70%; animation: animate 5s linear infinite; }
+  .wrapper1 div:nth-child(8) { top: 25%; left: 50%; animation: animate 8s linear infinite; }
+  .wrapper1 div:nth-child(9) { top: 75%; left: 45%; animation: animate 12s linear infinite; }
+  .wrapper1 div:nth-child(10) { top: 65%; left: 20%; animation: animate 6s linear infinite; }
+  .wrapper1 div:nth-child(11) { top: 32%; left: 10%; animation: animate 8s linear infinite; }
+  .wrapper1 div:nth-child(12) { top: 85%; left: 15%; animation: animate 10s linear infinite; }
+  .wrapper1 div:nth-child(13) { top: 35%; left: 60%; animation: animate 7s linear infinite; }
+  .wrapper1 div:nth-child(14) { top: 30%; left: 50%; animation: animate 9s linear infinite; }
+  .wrapper1 div:nth-child(15) { top: 55%; left: 30%; animation: animate 6s linear infinite; }
+  .wrapper1 div:nth-child(16) { top: 40%; left: 90%; animation: animate 10s linear infinite; }
+  .wrapper1 div:nth-child(17) { top: 88%; left: 75%; animation: animate 8s linear infinite; }
+  .wrapper1 div:nth-child(18) { top: 50%; left: 10%; animation: animate 5s linear infinite; }
+  .wrapper1 div:nth-child(19) { top:93%;  left:2%;  animation: animate 8s linear infinite;}
+  .wrapper1 div:nth-child(20) {top:92%; left: 45%; animation :animate 8s linear infinite;}
+  /* Keyframes for Bubble Animation */
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(70deg);
+    }
+    100% {
+      transform: scale(1.3) translateY(-70px) rotate(360deg);
+    }
+  }
+
+  * {
+    text-decoration: none;
+}
+
+
+/* Home Component Styles */
+.Home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(#04fafd, 50%, #119dff);
+    
+    overflow: hidden;
+  }
+  
+  /* Bubble Wrapper */
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* Bubble Div Styling */
+  .wrapper div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    
+  }
+  
+  /* Dot Styling Inside Bubble */
+  div .dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    
+  }
+  
+  /* Positioning and Animation Timing for Bubbles */
+  .wrapper div:nth-child(1) { top: 25%; left: 20%; animation: animate 8s linear infinite; }
+  .wrapper div:nth-child(2) { top: 60%; left: 80%; animation: animate 10s linear infinite; }
+  .wrapper div:nth-child(3) { top: 40%; left: 40%; animation: animate 3s linear infinite; }
+  .wrapper div:nth-child(4) { top: 90%; left: 30%; animation: animate 7s linear infinite; }
+  .wrapper div:nth-child(5) { top: 30%; left: 90%; animation: animate 9s linear infinite; }
+  .wrapper div:nth-child(6) { top: 85%; left: 60%; animation: animate 9s linear infinite; }
+  .wrapper div:nth-child(7) { top: 50%; left: 70%; animation: animate 5s linear infinite; }
+  .wrapper div:nth-child(8) { top: 25%; left: 50%; animation: animate 8s linear infinite; }
+  .wrapper div:nth-child(9) { top: 75%; left: 45%; animation: animate 12s linear infinite; }
+  .wrapper div:nth-child(10) { top: 65%; left: 20%; animation: animate 6s linear infinite; }
+  .wrapper div:nth-child(11) { top: 32%; left: 10%; animation: animate 8s linear infinite; }
+  .wrapper div:nth-child(12) { top: 85%; left: 15%; animation: animate 10s linear infinite; }
+  .wrapper div:nth-child(13) { top: 35%; left: 60%; animation: animate 7s linear infinite; }
+  .wrapper div:nth-child(14) { top: 30%; left: 50%; animation: animate 9s linear infinite; }
+  .wrapper div:nth-child(15) { top: 55%; left: 30%; animation: animate 6s linear infinite; }
+  .wrapper div:nth-child(16) { top: 40%; left: 90%; animation: animate 10s linear infinite; }
+  .wrapper div:nth-child(17) { top: 88%; left: 75%; animation: animate 8s linear infinite; }
+  .wrapper div:nth-child(18) { top: 50%; left: 10%; animation: animate 5s linear infinite; }
+  .wrapper div:nth-child(19) { top:93%;  left:2%;  animation: animate 8s linear infinite;}
+  .wrapper div:nth-child(20) {top:92%; left: 45%; animation :animate 8s linear infinite;}
+  /* Keyframes for Bubble Animation */
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(70deg);
+    }
+    100% {
+      transform: scale(1.3) translateY(-70px) rotate(360deg);
+    }
+  }
+  
+
+.post h2 {
+    font-family: "Catamaran", sans-serif;
+    font-weight: 400px;
+    font-size: 34px;
+}
+
+.post p{
+    font-family: "Catamaran", sans-serif;
+}
+
+.post a{
+    text-decoration: none;
+    color: #111;
+}
+@media (min-width:900px) {
+  .post h2 {
+    font-family: "Catamaran", sans-serif;
+    font-weight: 400px;
+    font-size: 40px;
+}
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px #111;
+    border: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.footer {
+   background:  #119dff;
+   position: relative;
+   overflow: hidden;
+}
+
+.mainheader{
+    background: #04fafd;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(#04fafd, 50%, #119dff);
+    overflow: hidden;
+}
+
+.firstabout {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px 0 15px 0;
+    font-family: "Catamaran", sans-serif;
+}
+
+.textcontent h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.firstabout p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #333333;
+}
+
+@media only screen and (min-width: 800px) {
+    
+
+    .firstabout {
+        flex-direction: row;
+        width: 1200px;
+        align-items: center;
+        height: calc(100vh - 100px);
+        padding: 0 100px 15px 100px;
+    }
+    .textcontent h1{
+        font-size: 2.3rem;
+        font-weight: 550;
+    }
+
+    .textcontent {
+        flex: 1;
+        width: 70%;
+    }
+
+    .firstabout img {
+        flex: 1;
+        width: 400px;
+        height: 300px;
+        margin-left: 20px;
+    }
+    
+    .firstabout p {
+        font-size: 1.5rem;
+    }
+}
+
+
+.secondabout{
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px 0 15px 0;
+    font-family: "Catamaran", sans-serif;
+}
+
+
+.secondabout ul{
+    list-style: none;
+    font-size: 16px;
+    
+}
+
+.secondabout ul li{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.secondabout0 h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.secondabout img{
+    width:260px;
+    height: 150px;
+}
+
+@media only screen and (min-width: 800px){
+    .secondabout {
+        
+        flex-direction: row;
+        width: 1200px;
+        height: calc();
+        align-items: center;
+        height: calc(100vh - 400px);
+        padding: 0 100px 15px 100px;
+       
+    }
+    .secondabout0 h1{
+        font-size: 2.3rem;
+        font-weight: 550;
+    }
+    .secondabout0 {
+        flex: 1;
+        width: 70%;
+    }
+    .secondabout img {
+        flex: 1;
+        width: 400px;
+        height: 300px;
+        margin-left: 20px;
+    }
+    .secondabout0 ul li{
+        font-size: 1.5rem;
+    
+    }
+}
+
+.thirdabout{
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px 0 15px 0;
+    font-family: "Catamaran", sans-serif;
+
+
+}
+
+
+.thirdabout ul{
+list-style: none;
+font-size: 16px;
+
+}
+
+.thirdabout ul li{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.thirdabout0 h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.thirdabout img{
+width:260px;
+height: 150px;
+}
+
+@media only screen and (min-width: 800px) {
+    .thirdabout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Ensure image moves to the right */
+        width: 1200px;
+        align-items: center;
+        height: calc(100vh - 100px);
+        padding: 0 100px 15px 100px;
+    }
+    
+    .thirdabout0 {
+        flex: 1; /* Text takes up remaining space */
+        margin-right: 20px; /* Add some space between text and image */
+        
+    }
+    
+    .thirdabout0 h1 {
+        font-size: 2.3rem;
+        font-weight: 550;
+    }
+    
+    .thirdabout img {
+        flex:1; /* Prevent the image from shrinking */
+        width: 400px;
+        height: 300px;
+       
+    }
+    
+    .thirdabout0 ul li {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+  
+  /* Bubble Wrapper */
+  .wrapper2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* Bubble Div Styling */
+  .wrapper2 div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    animation: animate 8s linear infinite;
+    
+  }
+  
+  /* Dot Styling Inside Bubble */
+  div .dot2 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    
+  }
+  
+  /* Positioning and Animation Timing for Bubbles */
+  .wrapper2 div:nth-child(1) { top: 25%; left: 20%; animation: animate 8s linear infinite; }
+  .wrapper2 div:nth-child(2) { top: 60%; left: 80%; animation: animate 10s linear infinite; }
+  .wrapper2 div:nth-child(3) { top: 40%; left: 40%; animation: animate 3s linear infinite; }
+  .wrapper2 div:nth-child(4) { top: 90%; left: 30%; animation: animate 7s linear infinite; }
+  .wrapper2 div:nth-child(5) { top: 30%; left: 90%; animation: animate 9s linear infinite; }
+  .wrapper2 div:nth-child(6) { top: 85%; left: 60%; animation: animate 9s linear infinite; }
+  .wrapper2 div:nth-child(7) { top: 50%; left: 70%; animation: animate 5s linear infinite; }
+  .wrapper2 div:nth-child(8) { top: 25%; left: 50%; animation: animate 8s linear infinite; }
+  .wrapper2 div:nth-child(9) { top: 75%; left: 45%; animation: animate 12s linear infinite; }
+  .wrapper2 div:nth-child(10) { top: 65%; left: 20%; animation: animate 6s linear infinite; }
+  .wrapper2 div:nth-child(11) { top: 32%; left: 10%; animation: animate 8s linear infinite; }
+  .wrapper2 div:nth-child(12) { top: 85%; left: 15%; animation: animate 10s linear infinite; }
+  .wrapper2 div:nth-child(13) { top: 35%; left: 60%; animation: animate 7s linear infinite; }
+  .wrapper2 div:nth-child(14) { top: 30%; left: 50%; animation: animate 9s linear infinite; }
+  .wrapper2 div:nth-child(15) { top: 55%; left: 30%; animation: animate 6s linear infinite; }
+  .wrapper2 div:nth-child(16) { top: 40%; left: 90%; animation: animate 10s linear infinite; }
+  .wrapper2 div:nth-child(17) { top: 88%; left: 75%; animation: animate 8s linear infinite; }
+  .wrapper2 div:nth-child(18) { top: 50%; left: 10%; animation: animate 5s linear infinite; }
+  .wrapper2 div:nth-child(19) { top:93%;  left:2%;  animation: animate 8s linear infinite;}
+  .wrapper2 div:nth-child(20) {top:92%; left: 45%; animation :animate 8s linear infinite;}
+  /* Keyframes for Bubble Animation */
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(70deg);
+    }
+    100% {
+      transform: scale(1.3) translateY(-70px) rotate(360deg);
+    }
+  }
+
+  .contactinfo {
+    display: flex;
+    flex-direction: column; /* Stacking the heading and paragraph vertically */
+    width: 100%;
+    height: calc(100vh - 26px);
+    background: linear-gradient(#04fafd, 50%, #119dff);
+    z-index: 10;
+}
+
+.contactinfo h1 {
+    font-size: 60px;
+    font-weight: 700;
+    padding-left: 30px;
+    padding-top: 0px;
+    
+}
+
+.contactinfo p {
+    
+    padding-left: 30px; /* Align with heading */
+    margin-left: 0; /* Reset any previous margin */
+    font-size: 24px;
+    color: #757575;
+}
+
+.socialmedialinks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+
+}
+.socialmedialinks a img{
+     width: 189px;
+     height: 40px;
+     
+}
+
+.emailform{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+.emailform input{
+    width: 400px;
+    height:40px;
+    border: #949494 solid 1px;
+    border-radius: 8px;
+    
+}
+.emailform h3{
+    font-size: 27px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.emailform label{
+    font-size: 20px;
+    font-weight: 60px;
+    padding-top: 10px;
+
+}
+.emailform button{
+    width: 95px;
+    margin-left: 110px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: antiquewhite;
+    background-color: #111;
+}
+
+.emailform p{
+  color: red;
+  font-weight: 300;
+  margin: 0%;
+  font-size: 20px;
+}
+
+@media (min-width: 1000px){
+    .emailform {
+        flex-direction: column; /* Keep inputs stacked vertically */
+        align-items: center;
+    }
+    .emailform label{
+        padding-right: 330px;
+    }
+    .emailform,.messagelabel{
+        padding-left: 20px;
+    }
+    
+    .emailform h3{
+        padding-right: 168px;
+    }
+    .emailform button{
+        margin-right: 100px;
+    }
+    .socialmedialinks a img{
+      width: 309px;
+      height: 60px;
+      
+ }
+    
+
+  
+
+}
+
+
+
+.wrapper3 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+
+  }
+  
+  /* Bubble Div Styling */
+  .wrapper3 div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    animation: animate 8s linear infinite;
+    
+  }
+  
+  /* Dot Styling Inside Bubble */
+  div .dot3 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    
+  }
+  
+  /* Positioning and Animation Timing for Bubbles */
+  .wrapper3 div:nth-child(1) { top: 25%; left: 20%; animation: animate 8s linear infinite; }
+  .wrapper3 div:nth-child(2) { top: 60%; left: 80%; animation: animate 10s linear infinite; }
+  .wrapper3 div:nth-child(3) { top: 40%; left: 40%; animation: animate 3s linear infinite; }
+  .wrapper3 div:nth-child(4) { top: 90%; left: 30%; animation: animate 7s linear infinite; }
+  .wrapper3 div:nth-child(5) { top: 30%; left: 90%; animation: animate 9s linear infinite; }
+  .wrapper3 div:nth-child(6) { top: 85%; left: 60%; animation: animate 9s linear infinite; }
+  .wrapper3 div:nth-child(7) { top: 50%; left: 70%; animation: animate 5s linear infinite; }
+  .wrapper3 div:nth-child(8) { top: 25%; left: 50%; animation: animate 8s linear infinite; }
+  .wrapper3 div:nth-child(9) { top: 75%; left: 45%; animation: animate 12s linear infinite; }
+  .wrapper3 div:nth-child(10) { top: 65%; left: 20%; animation: animate 6s linear infinite; }
+  .wrapper3 div:nth-child(11) { top: 32%; left: 10%; animation: animate 8s linear infinite; }
+  .wrapper3 div:nth-child(12) { top: 85%; left: 15%; animation: animate 10s linear infinite; }
+  .wrapper3 div:nth-child(13) { top: 35%; left: 60%; animation: animate 7s linear infinite; }
+  .wrapper3 div:nth-child(14) { top: 30%; left: 50%; animation: animate 9s linear infinite; }
+  .wrapper3 div:nth-child(15) { top: 55%; left: 30%; animation: animate 6s linear infinite; }
+  .wrapper3 div:nth-child(16) { top: 40%; left: 90%; animation: animate 10s linear infinite; }
+  .wrapper3 div:nth-child(17) { top: 88%; left: 75%; animation: animate 8s linear infinite; }
+  .wrapper3 div:nth-child(18) { top: 50%; left: 10%; animation: animate 5s linear infinite; }
+  .wrapper3 div:nth-child(19) { top:93%;  left:2%;  animation: animate 8s linear infinite;}
+  .wrapper3 div:nth-child(20) {top:92%; left: 45%; animation :animate 8s linear infinite;}
+  /* Keyframes for Bubble Animation */
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(70deg);
+    }
+    100% {
+      transform: scale(1.3) translateY(-70px) rotate(360deg);
+    }
+  }
+
+
+  .postpage{
+    height: 100vh;
+    background: linear-gradient(#04fafd, 50%, #119dff);
+    
+  }
+  .post,.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+  
+
+  .postpage,.post{
+    display: flex;
+    flex-direction: column;
+    padding-left: 7px;
+    padding-top: 10px;
+  }
+ 
+  .postpage button{
+    width: 100px;
+    background-color:#111;
+    color:azure;
+    border-radius: 12px;
+  }
+  @media (min-width: 1000px){
+    .postpage,.post{
+        padding:17px 0px 0px 17px;
+    }
+   
+  }
+
+
+
+  .wrapper4 {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* Bubble Div Styling */
+  .wrapper4 div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    animation: animate 8s linear infinite;
+  }
+  
+  /* Dot Styling Inside Bubble */
+  div .dot4 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    
+  }
+  
+  /* Positioning and Animation Timing for Bubbles */
+  .wrapper4 div:nth-child(1) { top: 25%; left: 20%; animation: animate 8s linear infinite; }
+  .wrapper4 div:nth-child(2) { top: 60%; left: 80%; animation: animate 10s linear infinite; }
+  .wrapper4 div:nth-child(3) { top: 40%; left: 40%; animation: animate 3s linear infinite; }
+  .wrapper4 div:nth-child(4) { top: 90%; left: 30%; animation: animate 7s linear infinite; }
+  .wrapper4 div:nth-child(5) { top: 30%; left: 90%; animation: animate 9s linear infinite; }
+  .wrapper4 div:nth-child(6) { top: 85%; left: 60%; animation: animate 9s linear infinite; }
+  .wrapper4 div:nth-child(7) { top: 50%; left: 70%; animation: animate 5s linear infinite; }
+  .wrapper4 div:nth-child(8) { top: 25%; left: 50%; animation: animate 8s linear infinite; }
+  .wrapper4 div:nth-child(9) { top: 75%; left: 45%; animation: animate 12s linear infinite; }
+  .wrapper4 div:nth-child(10) { top: 65%; left: 20%; animation: animate 6s linear infinite; }
+  .wrapper4 div:nth-child(11) { top: 32%; left: 10%; animation: animate 8s linear infinite; }
+  .wrapper4 div:nth-child(12) { top: 85%; left: 15%; animation: animate 10s linear infinite; }
+  .wrapper4 div:nth-child(13) { top: 35%; left: 60%; animation: animate 7s linear infinite; }
+  .wrapper4 div:nth-child(14) { top: 30%; left: 50%; animation: animate 9s linear infinite; }
+  .wrapper4 div:nth-child(15) { top: 55%; left: 30%; animation: animate 6s linear infinite; }
+  .wrapper4 div:nth-child(16) { top: 40%; left: 90%; animation: animate 10s linear infinite; }
+  .wrapper4 div:nth-child(17) { top: 88%; left: 75%; animation: animate 8s linear infinite; }
+  .wrapper4 div:nth-child(18) { top: 50%; left: 10%; animation: animate 5s linear infinite; }
+  .wrapper4 div:nth-child(19) { top:93%;  left:2%;  animation: animate 8s linear infinite;}
+  .wrapper4 div:nth-child(20) {top:92%; left: 45%; animation :animate 8s linear infinite;}
+  /* Keyframes for Bubble Animation */
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(70deg);
+    }
+    100% {
+      transform: scale(1.3) translateY(-70px) rotate(360deg);
+    }
+  }
+
+  .missingpage{
+    height: 100vh;
+    background: linear-gradient(#04fafd, 50%, #119dff);
+  }
+
+  .missingpage,.missingsection{
+    display: flex;
+    flex-direction: column;
+    padding-left: 7px;
+    padding-top: 10px;
+  }
+  @media (min-width: 1000px){
+    .missingpage,.missingsection{
+        padding:17px 0px 0px 17px;
+    }
+   
+  }
+
+
+.wrapper5 {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* Bubble Div Styling */
+  .wrapper5 div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    animation: animate 8s linear infinite;
+  }
+  
+  /* Dot Styling Inside Bubble */
+  div .dot5 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    
+  }
+  
+  /* Positioning and Animation Timing for Bubbles */
+  .wrapper5 div:nth-child(1) { top: 25%; left: 20%; animation: animate 8s linear infinite; }
+  .wrapper5 div:nth-child(2) { top: 60%; left: 80%; animation: animate 10s linear infinite; }
+  .wrapper5 div:nth-child(3) { top: 40%; left: 40%; animation: animate 3s linear infinite; }
+  .wrapper5 div:nth-child(4) { top: 90%; left: 30%; animation: animate 7s linear infinite; }
+  .wrapper5 div:nth-child(5) { top: 30%; left: 90%; animation: animate 9s linear infinite; }
+  .wrapper5 div:nth-child(6) { top: 85%; left: 60%; animation: animate 9s linear infinite; }
+  .wrapper5 div:nth-child(7) { top: 50%; left: 70%; animation: animate 5s linear infinite; }
+  .wrapper5 div:nth-child(8) { top: 25%; left: 50%; animation: animate 8s linear infinite; }
+  .wrapper5 div:nth-child(9) { top: 75%; left: 45%; animation: animate 12s linear infinite; }
+  .wrapper5 div:nth-child(10) { top: 65%; left: 20%; animation: animate 6s linear infinite; }
+  .wrapper5 div:nth-child(11) { top: 32%; left: 10%; animation: animate 8s linear infinite; }
+  .wrapper5 div:nth-child(12) { top: 85%; left: 15%; animation: animate 10s linear infinite; }
+  .wrapper5 div:nth-child(13) { top: 35%; left: 60%; animation: animate 7s linear infinite; }
+  .wrapper5 div:nth-child(14) { top: 30%; left: 50%; animation: animate 9s linear infinite; }
+  .wrapper5 div:nth-child(15) { top: 55%; left: 30%; animation: animate 6s linear infinite; }
+  .wrapper5 div:nth-child(16) { top: 40%; left: 90%; animation: animate 10s linear infinite; }
+  .wrapper5 div:nth-child(17) { top: 88%; left: 75%; animation: animate 8s linear infinite; }
+  .wrapper5 div:nth-child(18) { top: 50%; left: 10%; animation: animate 5s linear infinite; }
+  .wrapper5 div:nth-child(19) { top:93%;  left:2%;  animation: animate 8s linear infinite;}
+  .wrapper5 div:nth-child(20) {top:92%; left: 45%; animation :animate 8s linear infinite;}
+  /* Keyframes for Bubble Animation */
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(70deg);
+    }
+    100% {
+      transform: scale(1.3) translateY(-70px) rotate(360deg);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
